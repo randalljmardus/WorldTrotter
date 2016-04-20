@@ -60,6 +60,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="oVB-xh-XHo" firstAttribute="top" secondItem="5Qj-oo-zHz" secondAttribute="bottom" constant="13" id="8Eq-Ac-wzz"/>
                             <constraint firstItem="oVB-xh-XHo" firstAttribute="centerX" secondItem="raj-dy-kxL" secondAttribute="centerX" id="DFc-DX-eHp"/>
@@ -78,12 +79,21 @@
                             <constraint firstItem="okI-LA-qxT" firstAttribute="centerX" secondItem="raj-dy-kxL" secondAttribute="centerX" id="vBo-3f-hpc"/>
                             <constraint firstItem="5Qj-oo-zHz" firstAttribute="top" secondItem="okI-LA-qxT" secondAttribute="bottom" constant="8" id="wob-2D-sC5"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ist-y6-p6E" appends="YES" id="hUw-mY-dfH"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="celsiusLabel" destination="5Qj-oo-zHz" id="eVf-7w-ImG"/>
+                        <outlet property="textField" destination="nSh-o6-TRg" id="cs6-TX-JJl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ist-y6-p6E">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="4zK-Rl-XD3"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
