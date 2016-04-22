@@ -49,6 +49,7 @@
                                 <rect key="frame" x="175" y="28" width="250" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="0EI-AG-NOp"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="ost-EQ-a0X"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="z9Q-Sf-shA"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="0.34731947000000002" blue="0.038780638909999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,13 +64,15 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="oVB-xh-XHo" firstAttribute="top" secondItem="5Qj-oo-zHz" secondAttribute="bottom" constant="13" id="8Eq-Ac-wzz"/>
+                            <constraint firstItem="nSh-o6-TRg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A2Q-zF-axk"/>
                             <constraint firstItem="oVB-xh-XHo" firstAttribute="centerX" secondItem="raj-dy-kxL" secondAttribute="centerX" id="DFc-DX-eHp"/>
                             <constraint firstItem="oVB-xh-XHo" firstAttribute="top" secondItem="5Qj-oo-zHz" secondAttribute="bottom" constant="8" id="Fwc-ev-Z8R"/>
                             <constraint firstItem="5Qj-oo-zHz" firstAttribute="centerX" secondItem="raj-dy-kxL" secondAttribute="centerX" id="GjO-J2-vMh"/>
+                            <constraint firstItem="raj-dy-kxL" firstAttribute="top" secondItem="nSh-o6-TRg" secondAttribute="bottom" constant="8" id="Lub-fJ-FK2"/>
+                            <constraint firstItem="raj-dy-kxL" firstAttribute="centerX" secondItem="nSh-o6-TRg" secondAttribute="centerX" id="Mir-Tp-FC8"/>
                             <constraint firstItem="okI-LA-qxT" firstAttribute="top" secondItem="raj-dy-kxL" secondAttribute="bottom" constant="8" id="PJT-xj-eVw"/>
                             <constraint firstItem="oVB-xh-XHo" firstAttribute="top" secondItem="5Qj-oo-zHz" secondAttribute="bottom" constant="8" id="SKa-GO-12Q"/>
                             <constraint firstItem="nSh-o6-TRg" firstAttribute="centerX" secondItem="raj-dy-kxL" secondAttribute="centerX" id="YIN-6l-LeA"/>
-                            <constraint firstItem="raj-dy-kxL" firstAttribute="top" secondItem="nSh-o6-TRg" secondAttribute="bottom" constant="37" id="YsV-8O-ScH"/>
                             <constraint firstItem="nSh-o6-TRg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dRc-FX-85s"/>
                             <constraint firstItem="5Qj-oo-zHz" firstAttribute="top" secondItem="okI-LA-qxT" secondAttribute="bottom" constant="8" id="eND-md-GLY"/>
                             <constraint firstItem="nSh-o6-TRg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="fxZ-S3-Hyc"/>
@@ -77,6 +80,7 @@
                             <constraint firstItem="nSh-o6-TRg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="spZ-1H-cGF"/>
                             <constraint firstItem="raj-dy-kxL" firstAttribute="top" secondItem="nSh-o6-TRg" secondAttribute="bottom" constant="8" id="ugp-5p-PuU"/>
                             <constraint firstItem="okI-LA-qxT" firstAttribute="centerX" secondItem="raj-dy-kxL" secondAttribute="centerX" id="vBo-3f-hpc"/>
+                            <constraint firstItem="nSh-o6-TRg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="vkb-dx-5Ej"/>
                             <constraint firstItem="5Qj-oo-zHz" firstAttribute="top" secondItem="okI-LA-qxT" secondAttribute="bottom" constant="8" id="wob-2D-sC5"/>
                         </constraints>
                         <connections>

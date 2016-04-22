@@ -28,7 +28,7 @@ class ConversionViewController: UIViewController {
     
     func updateCelsiusLabel() {
         if let value = celsiusValue {
-            celsiusLabel.text = "\(value)"
+            celsiusLabel.text = numberFormatter.stringFromNumber(value)
         }
         else {
             celsiusLabel.text = "???"
@@ -49,4 +49,12 @@ class ConversionViewController: UIViewController {
             fahrenheitValue = nil
         }
     }
+    
+    let numberFormatter: NSNumberFormatter = {
+        let nf = NSNumberFormatter()
+        nf.numberStyle = .DecimalStyle
+        nf.minimumFractionDigits = 0
+        nf.maximumFractionDigits = 1
+        return nf
+    }()
 }
