@@ -12,6 +12,7 @@
 		1515E03E1CC6BA86000B5AC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1515E03D1CC6BA86000B5AC1 /* Assets.xcassets */; };
 		1515E0411CC6BA86000B5AC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1515E03F1CC6BA86000B5AC1 /* LaunchScreen.storyboard */; };
 		1515E0491CC7D483000B5AC1 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E0481CC7D483000B5AC1 /* ConversionViewController.swift */; };
+		1515E04B1CCA7861000B5AC1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1515E04A1CCA7861000B5AC1 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1515E0401CC6BA86000B5AC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1515E0421CC6BA86000B5AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1515E0481CC7D483000B5AC1 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversionViewController.swift; path = ../ConversionViewController.swift; sourceTree = "<group>"; };
+		1515E04A1CCA7861000B5AC1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1515E04B1CCA7861000B5AC1 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 		1515E02A1CC6BA86000B5AC1 = {
 			isa = PBXGroup;
 			children = (
+				1515E04A1CCA7861000B5AC1 /* MapKit.framework */,
 				1515E0351CC6BA86000B5AC1 /* WorldTrotter */,
 				1515E0341CC6BA86000B5AC1 /* Products */,
 			);
