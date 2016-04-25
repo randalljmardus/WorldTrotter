@@ -70,4 +70,11 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
             return true
         }
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print("ConversionViewController loaded its view.")
+    }
+    
 }
