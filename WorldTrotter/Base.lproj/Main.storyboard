@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Convert-->
@@ -17,13 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raj-dy-kxL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raj-dy-kxL">
                                 <rect key="frame" x="147" y="120" width="306" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okI-LA-qxT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is really" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okI-LA-qxT">
                                 <rect key="frame" x="241" y="171" width="119" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -32,16 +33,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qj-oo-zHz">
                                 <rect key="frame" x="241" y="222" width="117" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVB-xh-XHo">
-                                <rect key="frame" x="173" y="314" width="254" height="43"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="4uS-RE-gmn"/>
-                                    <constraint firstAttribute="width" constant="254" id="XPl-KU-0GU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -60,24 +51,40 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Axu-Kf-ydx"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVB-xh-XHo">
+                                <rect key="frame" x="173" y="314" width="254" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="4uS-RE-gmn"/>
+                                    <constraint firstAttribute="width" constant="254" id="XPl-KU-0GU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="oVB-xh-XHo" firstAttribute="top" secondItem="5Qj-oo-zHz" secondAttribute="bottom" constant="13" id="8Eq-Ac-wzz"/>
                             <constraint firstItem="nSh-o6-TRg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A2Q-zF-axk"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="okI-LA-qxT" secondAttribute="trailing" id="A3b-Bw-6N1"/>
                             <constraint firstItem="oVB-xh-XHo" firstAttribute="centerX" secondItem="raj-dy-kxL" secondAttribute="centerX" id="DFc-DX-eHp"/>
                             <constraint firstItem="oVB-xh-XHo" firstAttribute="top" secondItem="5Qj-oo-zHz" secondAttribute="bottom" constant="8" id="Fwc-ev-Z8R"/>
                             <constraint firstItem="5Qj-oo-zHz" firstAttribute="centerX" secondItem="raj-dy-kxL" secondAttribute="centerX" id="GjO-J2-vMh"/>
                             <constraint firstItem="raj-dy-kxL" firstAttribute="top" secondItem="nSh-o6-TRg" secondAttribute="bottom" constant="8" id="Lub-fJ-FK2"/>
                             <constraint firstItem="raj-dy-kxL" firstAttribute="centerX" secondItem="nSh-o6-TRg" secondAttribute="centerX" id="Mir-Tp-FC8"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="raj-dy-kxL" secondAttribute="trailing" id="P5k-8y-4hi"/>
                             <constraint firstItem="okI-LA-qxT" firstAttribute="top" secondItem="raj-dy-kxL" secondAttribute="bottom" constant="8" id="PJT-xj-eVw"/>
                             <constraint firstItem="oVB-xh-XHo" firstAttribute="top" secondItem="5Qj-oo-zHz" secondAttribute="bottom" constant="8" id="SKa-GO-12Q"/>
                             <constraint firstItem="nSh-o6-TRg" firstAttribute="centerX" secondItem="raj-dy-kxL" secondAttribute="centerX" id="YIN-6l-LeA"/>
                             <constraint firstItem="nSh-o6-TRg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dRc-FX-85s"/>
                             <constraint firstItem="5Qj-oo-zHz" firstAttribute="top" secondItem="okI-LA-qxT" secondAttribute="bottom" constant="8" id="eND-md-GLY"/>
+                            <constraint firstItem="raj-dy-kxL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="edA-hk-1Js"/>
                             <constraint firstItem="nSh-o6-TRg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="fxZ-S3-Hyc"/>
                             <constraint firstItem="okI-LA-qxT" firstAttribute="top" secondItem="raj-dy-kxL" secondAttribute="bottom" constant="8" id="hDR-0U-cXc"/>
+                            <constraint firstItem="okI-LA-qxT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="p42-lf-P4x"/>
+                            <constraint firstItem="oVB-xh-XHo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qzM-0y-3mM"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="oVB-xh-XHo" secondAttribute="trailing" id="sW9-pR-STE"/>
                             <constraint firstItem="nSh-o6-TRg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="spZ-1H-cGF"/>
                             <constraint firstItem="raj-dy-kxL" firstAttribute="top" secondItem="nSh-o6-TRg" secondAttribute="bottom" constant="8" id="ugp-5p-PuU"/>
                             <constraint firstItem="okI-LA-qxT" firstAttribute="centerX" secondItem="raj-dy-kxL" secondAttribute="centerX" id="vBo-3f-hpc"/>
