@@ -26,6 +26,8 @@
 		1515E0481CC7D483000B5AC1 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversionViewController.swift; path = ../ConversionViewController.swift; sourceTree = "<group>"; };
 		1515E04A1CCA7861000B5AC1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1515E04C1CCA7C4F000B5AC1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1515E04F1CD10F4A000B5AC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		1515E0501CD10FF2000B5AC1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				1515E03B1CC6BA86000B5AC1 /* Base */,
+				1515E04F1CD10F4A000B5AC1 /* en */,
+				1515E0501CD10FF2000B5AC1 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
