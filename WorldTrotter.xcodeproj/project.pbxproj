@@ -14,6 +14,7 @@
 		1515E0491CC7D483000B5AC1 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E0481CC7D483000B5AC1 /* ConversionViewController.swift */; };
 		1515E04B1CCA7861000B5AC1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1515E04A1CCA7861000B5AC1 /* MapKit.framework */; };
 		1515E04D1CCA7C4F000B5AC1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1515E04C1CCA7C4F000B5AC1 /* MapViewController.swift */; };
+		1515E0521CD11464000B5AC1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1515E0511CD11464000B5AC1 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1515E04C1CCA7C4F000B5AC1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1515E04F1CD10F4A000B5AC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		1515E0501CD10FF2000B5AC1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		1515E0511CD11464000B5AC1 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1515E0361CC6BA86000B5AC1 /* AppDelegate.swift */,
 				1515E03A1CC6BA86000B5AC1 /* Main.storyboard */,
 				1515E04C1CCA7C4F000B5AC1 /* MapViewController.swift */,
+				1515E0511CD11464000B5AC1 /* Localizable.strings */,
 				1515E03D1CC6BA86000B5AC1 /* Assets.xcassets */,
 				1515E03F1CC6BA86000B5AC1 /* LaunchScreen.storyboard */,
 				1515E0421CC6BA86000B5AC1 /* Info.plist */,
@@ -132,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1515E0411CC6BA86000B5AC1 /* LaunchScreen.storyboard in Resources */,
+				1515E0521CD11464000B5AC1 /* Localizable.strings in Resources */,
 				1515E03E1CC6BA86000B5AC1 /* Assets.xcassets in Resources */,
 				1515E03C1CC6BA86000B5AC1 /* Main.storyboard in Resources */,
 			);
@@ -298,6 +302,7 @@
 				1515E0471CC6BA86000B5AC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
